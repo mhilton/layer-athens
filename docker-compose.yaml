@@ -1,0 +1,11 @@
+version: "2"
+services:
+  athens:
+    env_file:
+     - /srv/athens/env
+    image: "$athens_image"
+    ports:
+     - "3000:3000"
+    restart: always
+    volumes:
+     - /srv/athens:/srv/athens

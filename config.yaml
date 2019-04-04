@@ -1,0 +1,9 @@
+options:
+  athens-image:
+    type: string
+    default: gomods/athens:latest
+    description: Athens docker image name.
+  netrc:
+    type: string
+    default: ""
+    description: Base64 encoded .netrc file for use by the athens server.

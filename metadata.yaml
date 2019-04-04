@@ -1,0 +1,17 @@
+name: athens
+display-name: Athens
+maintainer: Martin Hilton <martin.hilton@canonical.com>
+summary: Athens module proxy
+description: |
+    Athens provides a server for Go modules.
+series:
+ - bionic
+ - xenial
+tags:
+ - proxy
+storage:
+  cache:
+    type: filesystem
+    description: Module cache storage
+    minimum-size: 100M
+    location: /srv/athens/cache
