@@ -1,8 +1,13 @@
 version: "2"
 services:
   athens:
-    env_file:
-     - /srv/athens/env
+    environment:
+     - ATHENS_DISK_STORAGE_ROOT
+     - ATHENS_STORAGE_TYPE
+     - ATHENS_NETRC_PATH
+     - http_proxy
+     - https_proxy
+     - no_proxy
     image: "$athens_image"
     ports:
      - "3000:3000"
