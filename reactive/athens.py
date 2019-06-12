@@ -73,3 +73,9 @@ def compose():
     application_version_set(
         requests.get('http://localhost:3000/version').json()['version'])
     status_set('active', 'athens running')
+
+
+@when('website.available')
+@when('athens.port.open')
+def configure_website(website):
+    website.configure(port=3000)

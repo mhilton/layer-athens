@@ -9,6 +9,9 @@ series:
  - xenial
 tags:
  - proxy
+provides:
+  website:
+    interface: http
 storage:
   cache:
     type: filesystem

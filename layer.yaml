@@ -1,3 +1,4 @@
 repo: git@github.com:mhilton/layer-athens
 includes:
  - layer:docker
+ - interface:http
